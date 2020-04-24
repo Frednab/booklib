@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body>
+
+        <h1>My BookList</h1>
+
+        <i class="fas fa-quote-left" style="display: flex; justify-content: center; flex-grow:1; margin-bottom: 7px; color: blue;"></i>
+        <div class="space">
+
+        </div>
+        <blockquote>
+
+            Whenever you read a good book, somewhere in the world a door opens to allow in more light.
+
+        </blockquote>
+
+
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+
+                <input type="text" name="book" placeholder="Book Name">
+                <input type="text" name="author" placeholder="Author">
+                <input type="text" name="lesson" placeholder="Lesson">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="book-list"></ul>
+
+        </div>
+
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAucPkwSFi48GfpEbqFt3lSydpvqu2pN58",
+        authDomain: "booklist-40849.firebaseapp.com",
+        databaseURL: "https://booklist-40849.firebaseio.com",
+        projectId: "booklist-40849",
+        storageBucket: "booklist-40849.appspot.com",
+        messagingSenderId: "437360609435",
+        appId: "1:437360609435:web:1e91f2fe183ff6d7bf1e3e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+//Creating an instance of the database
+  db = firebase.firestore();
+</script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
